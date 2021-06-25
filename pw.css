@@ -21,43 +21,51 @@ html, body {
   background-position: center;
 }
 
-.banner {
-  margin-top: 15%;
-  position: fixed;
-  width: inherit;
-  max-width: 100%;
-  background-color: rgba(240,255,255,0.95);
-  font-family: optima, segoe, "segoe ui", candara, calibri, arial, sans-serif;
-  font-size: 2em;
-  display: block;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-
 #banner-top-1{
-  margin-top: 11%;
+  margin-top: 12%;
   position: fixed;
   width: inherit;
-  height: 40px;
+  height: 70px;
   max-width: 100%;
-  background-color: rgba(240,255,255,0.4);
+  background-color: rgba(240,255,255,0.5);
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
 }
 
 #banner-top-2{
-  margin-top: 13%;
+  margin-top: 16%;
   position: fixed;
   width: inherit;
-  height: 40px;
+  height: 70px;
   max-width: 100%;
-  background-color: rgba(240,255,255,0.6);
+  background-color: rgba(240,255,255,0.8);
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
+}
+
+.banner {
+  margin-top: 20%;
+  position: fixed;
+  width: inherit;
+  height: 70px;
+  max-width: 100%;
+  background-color: rgba(240,255,255,0.95);
+  font-family:  optima, segoe, "segoe ui", candara, calibri, arial, sans-serif;
+  font-size: 3.5em;
+  display: block;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 3px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+  .banner {
+    font-size: 2.5em;
+  }
 }
 
 #name {
@@ -65,12 +73,32 @@ html, body {
   display: block;
 }
 
+#iconWrapper{
+  /* padding-top: 160px;
+  padding-bottom: 190px; */
+  margin: 0 auto;
+  padding-top: 14%;
+  width: 50%;
+  height: 200px;
+  /* background: #F0FFFF;
+  background: -webkit-radial-gradient(circle farthest-corner at center center, #F0FFFF 34%, rgba(255, 0, 0, 0) 100%);
+  background: -moz-radial-gradient(circle farthest-corner at center center, #F0FFFF 34%, rgba(255, 0, 0, 0) 100%); */
+  background: radial-gradient(circle farthest-corner at center center, #F0FFFF 7%, rgba(255, 0, 0, 0) 50%);
+}
+
 #buttons {
   float: right;
+  position: fixed;
+  right: 10px;
 }
 
 .button {
   display: inline-block;
+}
+
+a{
+  color: darkslategrey;
+  text-decoration: none;
 }
 
 .modal {
@@ -91,7 +119,10 @@ html, body {
 .modal-content {
   position: absolute;
   margin-left: 8%;
-  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
   border: 1px solid #888;
   width: 80%;
   background-color: ;
@@ -103,12 +134,22 @@ html, body {
   font-size: 25px;
 }
 
+#actualFactualEmailBaby {
+  font-weight: bolder;
+  margin-top: 400px;
+  position: absolute;
+  left: 36%;
+  bottom: 5px;
+}
+
 /* The Close Button */
 .close {
-  color: #aaaaaa;
-  float: right;
+  color: #f0ffff;
   font-size: 28px;
-  font-weight: bold;
+  font-weight: bolder;
+  position: absolute;
+  top: 5px;
+  right: 15px;
 }
 
 .close:hover,
@@ -120,4 +161,20 @@ html, body {
 
 #myBtn:hover{
   cursor: pointer;
+}
+
+#linkedinIcon {
+  padding-top:  100px;
+  padding-left: 13px;
+  padding-right: 20px;
+}
+
+#githubIcon{
+  padding-top: 100px;
+  padding-right: 20px;
+}
+
+#emailIcon {
+  padding-top: 100px;
+  padding-right: 20px;
 }
