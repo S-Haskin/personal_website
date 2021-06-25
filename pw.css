@@ -62,9 +62,21 @@ html, body {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 980px) {
   .banner {
     font-size: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .banner {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .banner {
+    font-size: 100%;
   }
 }
 
